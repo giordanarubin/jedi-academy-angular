@@ -12,4 +12,8 @@ export class StudentComponent {
   @Input() student = <Student>{}
 
   constructor(){}
+
+  clicked(){
+    console.log(`Student: ${this.student.name}`)
+  }
 }
