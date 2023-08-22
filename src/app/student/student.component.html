@@ -1,0 +1,9 @@
+<div *ngIf = "student">
+    Student: {{student?.name}}<!--interpolação de template: pega a informação do component.ts-->
+    <div *ngIf = "student?.isJedi"><!-- ngif: uma diretiva, q vai mostrar o conteúdo se a expressão for verdadeira -->
+        Jedi Temple: {{student?.temple}}<!--a interrogação aqui é opcional, só se a propriedade for undefined-->
+    </div>
+</div>
+<p *ngIf="!student"><!--não funcionou sei lá pq-->
+    Sem dados para exibir
+</p>
